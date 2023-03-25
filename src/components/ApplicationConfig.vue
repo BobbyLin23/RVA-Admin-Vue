@@ -1,9 +1,10 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-  <div>Layout</div>
+  <n-message-provider>
+    <slot name="default" />
+  </n-message-provider>
 </template>
 
 <style scoped>

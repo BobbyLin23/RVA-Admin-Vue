@@ -3,6 +3,10 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 export const constantRoutes: RouteRecordRaw[] = [
   {
+    path: '/',
+    component: () => import('@/layout/index.vue'),
+  },
+  {
     path: '/login',
     component: () => import('@/views/Login/index.vue'),
   },
